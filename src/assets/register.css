@@ -1,0 +1,32 @@
+.button.ant-row.ant-form-item {
+     /* border: 1px solid red; */
+     display: flex;
+     justify-content: center;
+     text-align: center;
+    /* width: 100px; */
+}
+.button .ant-col.ant-col-18.ant-col-offset-6.ant-form-item-control{
+         /* border: 1px solid black; */
+         margin: 0;
+         max-width: 100%;
+
+}
+.button .ant-form-item-control-input{
+     /* border: 1px solid red; */
+
+}
+.button .ant-form-item-control-input-content{
+     /* border: 1px solid red; */
+
+}
+.button .ant-btn.ant-btn-primary{
+     /* border: 1px solid red; */
+     width:100%;
+
+}
+/* .button .ant-col-offset-6{
+    margin: 0;
+}
+.button .ant-btn.ant-btn-primary{
+    width: 100%;
+} */

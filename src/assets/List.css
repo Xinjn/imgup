@@ -1,0 +1,24 @@
+.title{
+     /* border: 1px solid red; */
+    display:flex;
+    justify-content:flex-end;
+
+}
+ .title .icon{
+               /* border: 1px solid red; */
+               margin-right: 5px;
+     }
+.title .ant-btn.ant-btn-primary{
+     /* border: 1px solid red; */
+     padding: 2px 20px;
+     min-height: auto;
+     font-size: 12px;
+}
+.ant-list-footer{
+     /* border: 1px solid red; */
+     padding-bottom: 0;
+   
+}
+.ant-list-pagination{
+     margin-top: 0;
+}

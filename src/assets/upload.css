@@ -1,0 +1,10 @@
+/* *{
+    border: 1px solid red;
+} */
+.ant-upload .ant-upload-btn{
+    /* border: 1px solid red; */
+
+}
+.ant-upload.ant-upload-drag .ant-upload{
+    padding-top:0;
+}
