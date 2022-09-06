@@ -16,7 +16,7 @@
 [![Github Actions][GithubAction]][GithubAction]<br/>
 ## Preview
 
-<a href="https://xinjn.github.io/imgup/index.html">View Demo</a>
+<a href="https://xinjn.github.io/imgup/build/#/">View Demo</a>
 ·
 <a href="https://github.com/Xinjn/imgup/issues">Report Bug</a>
 ·
