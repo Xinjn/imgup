@@ -13,10 +13,6 @@ const About = lazy(() => import('./pages/About'))
 const Login = lazy(() => import('./pages/Login'))
 const Register = lazy(() => import('./pages/Register'))
 
-// import Home from './pages/Home';
-// import History from './pages/History';
-// import About from './pages/About';
-
 //内容容器
 const Main = styled.main`
   display: flex;
@@ -38,7 +34,6 @@ function App() {
           </Switch>
         </Suspense>
       </Main>
-
       <Footer />
     </>
   )
