@@ -1,8 +1,8 @@
-# 这是一个基本的工作流程，可帮助您开始使用操作 
-# name 为 Workflow 的名字
+# originBuild.yml
+# 一个 workflow：远程构建编译
 name: CI
 
-# Controls when the workflow will run
+# 触发 workflow 的事件
 # on 触发的Events，可以是一个Events数组
 on:
   # 在推或拉请求事件上触发工作流，但仅针对 "master" branch
@@ -14,22 +14,31 @@ on:
   # 允许您从“操作”选项卡手动运行此工作流 
   workflow_dispatch:
 
-# 工作流运行由可以顺序或并行运行的一个或多个作业组成 
+# 一个workflow由执行的一项或多项job
 jobs:
-  # 此工作流程包含一个名为 build 的作业
+  # 一个job任务，任务名为build
   build:
-    # 运行环境
+    # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
     runs-on: ubuntu-latest
 
-    # 步骤表示将作为工作一部分执行的一系列任务 
+    # steps是每个Job的运行步骤，可以包含一个或多个步骤
     steps:
-      # 在$GITHUB_WORKSPACE下签出您的存储库，以便您的作业可以访问它
+      # 使用action库  actions/checkout获取源码
       - uses: actions/checkout@v3
 
-      # 执行某个shell命令或脚本
-      # 构建编译
-      - name: build start
-        run: echo build start.
+      # action命令，安装 Node 14
+      - name: Use Node.js 14
+        # 使用action库  actions/setup-node安装node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      # action命令，install && build
+      - name: npm install and build
+        # 运行的命令或者 action
+        run: |
+              npm install
+              npm run build
 
       # 编译结束
       - name: build end
