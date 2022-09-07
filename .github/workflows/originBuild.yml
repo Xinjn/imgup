@@ -36,9 +36,7 @@ jobs:
       # action命令，install && build
       - name: npm install and build
         # 运行的命令或者 action
-        run: |
-              npm install
-              npm run build
+        run: echo build start.
 
       # 编译结束
       - name: build end
